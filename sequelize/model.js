@@ -25,7 +25,9 @@ const auththree = db.define('auththree', {
 
 
 
-}, {timestamps: false});
+}, {timestamps: false
+
+ });
 
 
 auththree.beforeCreate(async function(user, options) {
@@ -39,6 +41,16 @@ auththree.beforeCreate(async function(user, options) {
     console.log(error);
   }
 });
+
+
+
+        auththree.prototype.isPasswordValid = function(password) {
+          console.log(password, this.password)
+          return bcrypt.compareSync(password, this.password);
+        }
+      
+      
+
 
 
 
