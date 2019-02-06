@@ -53,5 +53,6 @@ auththree.beforeCreate(async function(user, options) {
 
 
 
+auththree.sync();
 
 module.exports = auththree;
