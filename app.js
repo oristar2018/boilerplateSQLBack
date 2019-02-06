@@ -8,7 +8,7 @@ const passport = require("passport");
 // initalize sequelize with session store
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
-var Store = new SequelizeStore({
+var store = new SequelizeStore({
 	db
 });
 
@@ -19,14 +19,14 @@ app.use(require("body-parser").text());
 app.use(
 	session({
 		secret: "keyboard cat",
-		store: Store,
+		store,
 		resave: false,
 		saveUninitialized: false,
 		cookie: { maxAge: 24 * 60 * 60 * 1000 }
 	})
 );
 
-Store.sync();
+store.sync();
 
 app.use(passport.initialize());
 app.use(passport.session());
