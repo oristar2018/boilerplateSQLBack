@@ -14,4 +14,5 @@ const Sequelize = require('sequelize');
 
 const db = new Sequelize('postgres://postgres:lifeiscool@postgres:5432/postgres');
 
+
 module.exports = db;

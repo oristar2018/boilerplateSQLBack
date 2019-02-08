@@ -8,6 +8,8 @@ services:
       - '8888:8888'
     environment:
       DATABASE_URL: postgres://postgres:lifeiscool@postgres:5432/postgres
+    depends_on: 
+      - "postgres"
     links:
       - postgres
   postgres:
