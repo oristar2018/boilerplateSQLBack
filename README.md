@@ -17,11 +17,11 @@ I recommend the use of [Chocolatey](https://chocolatey.org/) to install NodeJS.
 
 The unit tests will be written and conducted with Jest.
 
-They will test the classes we use to create account objects and modify the account's balance and history.
+They will test the class we use to create account objects.
 
 The functional tests will be written with Cucumber-JS.
 
-They will simulate all of the application process (Account creation => log in => logout => account deletion and deposit / withdrawal) in real-time via endpoint testing.
+They will simulate all of the application process (Account creation => log in => logout => account deletion) in real-time via endpoint testing.
 
 
 ## Installation
