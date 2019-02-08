@@ -1,6 +1,6 @@
 # Boilerplate for SQL Environment
 
-in developement
+beta 1.00 ready for download
 
 
 ## Environment 
@@ -26,5 +26,14 @@ They will simulate all of the application process (Account creation => log in =>
 
 ## Installation
 
-This section will be available when the boilerplate is complete
+To install the boilerplate, simply run this from your CLI:
 
+``` npm run bpSqlInstall ```
+
+To tear down the app, run: 
+
+``` docker-compose down ```
+
+Finally, to run the tests : 
+
+``` npm test ```
